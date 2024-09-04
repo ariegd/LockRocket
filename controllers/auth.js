@@ -1,3 +1,6 @@
+const bcrypt = require('bcryptjs');
+const User = require('../models/User');
+
 module.exports = {
     registerView: (req, res) => {
       res.render('register');
