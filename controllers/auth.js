@@ -34,7 +34,6 @@ module.exports = {
     },
   
     logoutUser: (req, res) => {
-      // TODO: complete
-      res.redirect('login');
+      req.logout(() => res.redirect('/login?loggedout'));
     }
   }
